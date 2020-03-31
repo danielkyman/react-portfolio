@@ -2,7 +2,7 @@ import {
   GET_BLOGPOST_START,
   GET_BLOGPOST_SUCCESS,
   GET_BLOGPOST_ERROR
-} from "../actions/blogPost";
+} from "../actions/types";
 
 const initialState = {
   blogPost: [],
