@@ -3,7 +3,12 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 //Components
 import NavBar from "./components/navigation/NavBar";
+
+//pages
 import HomePage from "./pages/HomePage";
+import ArticlesPage from "./pages/ArticlesPage";
+import AboutMe from "./pages/AboutMe";
+import ContactPage from "./pages/ContactPage";
 
 //Redux
 import { connect } from "react-redux";
@@ -20,6 +25,9 @@ function App({ getBlogPost, blogPosts }) {
         <NavBar />
         <Switch>
           <Route exact path="/" component={HomePage} />
+          <Route exact path="/articles" component={ArticlesPage} />
+          <Route exact path="/about" component={AboutMe} />
+          <Route exact path="/contact" component={ContactPage} />
         </Switch>
       </div>
     </Router>
