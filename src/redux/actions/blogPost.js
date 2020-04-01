@@ -12,7 +12,7 @@ export const getBlogPost = () => dispatch => {
   dispatch({ type: GET_BLOGPOST_START });
   axios
     .get(
-      `${API_BASE_URL}/spaces/${API_SPACE_ID}/entries?access_token=${API_TOKEN}&content_type=blogPost`
+      `${API_BASE_URL}/spaces/${API_SPACE_ID}/entries?access_token=${API_TOKEN}&content_type=blogPost&order=-sys.createdAt`
     )
     .then(res => {
       console.log("get blogPost result - ", res);
