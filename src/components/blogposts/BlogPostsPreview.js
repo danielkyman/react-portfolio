@@ -9,11 +9,8 @@ const BlogPostsPreview = ({ getBlogPost, blogPosts }) => {
     getBlogPost();
   }, [getBlogPost]);
 
-  console.log(blogPosts);
-
   return (
     <div className="blog-posts-preview">
-      <h1>blog posts preview</h1>
       {blogPosts.map(post => {
         return (
           <div key={post.sys.id}>
@@ -29,7 +26,7 @@ const BlogPostsPreview = ({ getBlogPost, blogPosts }) => {
 
 const mapStateToProps = state => {
   return {
-    blogPosts: state.blogPost.blogPost
+    blogPosts: state.blogPost.blogPosts
   };
 };
 

@@ -1,11 +1,11 @@
 import {
-  GET_BLOGPOST_START,
-  GET_BLOGPOST_SUCCESS,
-  GET_BLOGPOST_ERROR
+  GET_PROJECT_START,
+  GET_PROJECT_SUCCESS,
+  GET_PROJECT_ERROR
 } from "../actions/types";
 
 const initialState = {
-  blogPosts: [],
+  projects: [],
   loading: false,
   error: ""
 };
@@ -14,22 +14,21 @@ export default function(state = initialState, action) {
   const { type, payload } = action;
 
   switch (type) {
-    case GET_BLOGPOST_START:
+    case GET_PROJECT_START:
       return {
         ...state,
         loading: true,
         error: ""
       };
-    case GET_BLOGPOST_SUCCESS:
+    case GET_PROJECT_SUCCESS:
       return {
         ...state,
-        blogPosts: payload.data.items,
+        projects: payload.data.items,
         loading: false
       };
-    case GET_BLOGPOST_ERROR:
+    case GET_PROJECT_ERROR:
       return {
         ...state,
-        loading: false,
         error: payload
       };
     default:

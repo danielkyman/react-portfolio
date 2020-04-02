@@ -11,6 +11,7 @@ const HomePage = () => {
     <div className="home-page">
       <h1>Home Page</h1>
       <Intro />
+      <h1>recent articles</h1>
       <BlogPostsPreview />
       <ProjectsPreview />
       <ReferencesPreview />
