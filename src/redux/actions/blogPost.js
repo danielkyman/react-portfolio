@@ -22,7 +22,7 @@ export const getBlogPost = () => dispatch => {
       console.log(err);
       dispatch({
         type: GET_BLOGPOST_ERROR,
-        payload: "error fetching data from api"
+        payload: "error fetching blogPost from api"
       });
     });
 };
