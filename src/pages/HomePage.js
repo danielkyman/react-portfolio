@@ -9,9 +9,7 @@ import ReferencesPreview from "../components/references/ReferencesPreview";
 const HomePage = () => {
   return (
     <div className="home-page">
-      <h1>Home Page</h1>
       <Intro />
-      <h1>recent articles</h1>
       <BlogPostsPreview />
       <ProjectsPreview />
       <ReferencesPreview />

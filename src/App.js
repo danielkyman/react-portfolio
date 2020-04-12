@@ -9,16 +9,17 @@ import HomePage from "./pages/HomePage";
 import ArticlesPage from "./pages/ArticlesPage";
 import AboutMe from "./pages/AboutMe";
 import ContactPage from "./pages/ContactPage";
+import ArticleSingle from "./pages/ArticleSingle";
 
 //Redux
-import { connect } from "react-redux";
-import { getBlogPost } from "./redux/actions/blogPost";
+// import { connect } from "react-redux";
+// import { getBlogPost } from "./redux/actions/blogPost";
 
 // import "./App.css";
 // import "./sass/test.scss";
 import "./scss/main.scss";
 
-function App({ getBlogPost, blogPosts }) {
+function App() {
   return (
     <Router>
       <div className="container">
@@ -28,16 +29,11 @@ function App({ getBlogPost, blogPosts }) {
           <Route exact path="/articles" component={ArticlesPage} />
           <Route exact path="/about" component={AboutMe} />
           <Route exact path="/contact" component={ContactPage} />
+          <Route exact path="/article/:slug" component={ArticleSingle} />
         </Switch>
       </div>
     </Router>
   );
 }
 
-const mapStateToProps = state => {
-  return {
-    blogPosts: state.blogPost.blogPost
-  };
-};
-
-export default connect(mapStateToProps, { getBlogPost })(App);
+export default App;

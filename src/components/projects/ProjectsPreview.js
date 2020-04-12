@@ -11,8 +11,8 @@ const ProjectsPreview = ({ getProject, projects }) => {
 
   return (
     <div className="projects-preview">
-      <h1>recent projects</h1>
-      {projects.map(project => {
+      <h1>Recent Projects</h1>
+      {projects.map((project) => {
         return (
           <div key={project.sys.id}>
             <a
@@ -44,9 +44,9 @@ const ProjectsPreview = ({ getProject, projects }) => {
   );
 };
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
-    projects: state.projects.projects
+    projects: state.projects.projects,
   };
 };
 

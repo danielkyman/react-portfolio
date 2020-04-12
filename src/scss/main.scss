@@ -35,3 +35,12 @@
 @import "components/tables";
 @import "components/navigation";
 @import "components/layout";
+
+.article {
+  img {
+    max-width: 100%;
+    width: 1200px;
+    height: 500px;
+    margin: 20px auto;
+  }
+}
