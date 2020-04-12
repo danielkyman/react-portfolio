@@ -1,13 +1,12 @@
 import React from "react";
 
 //components
-import BlogPostsPreview from "../components/blogposts/BlogPostsPreview";
+import BlogPostsPage from "../components/blogposts/BlogPostsPage";
 
 const ArticlesPage = () => {
   return (
     <div className="articles-page">
-      <h1>articles page</h1>
-      <BlogPostsPreview />
+      <BlogPostsPage />
     </div>
   );
 };

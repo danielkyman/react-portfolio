@@ -7,16 +7,17 @@ import * as serviceWorker from "./serviceWorker";
 import store from "./store";
 import { Provider } from "react-redux";
 
-// import * as contentful from "contentful";
 // import axios from "axios";
+
+// import * as contentful from "contentful";
 
 // const client = contentful.createClient({
 //   space: "q2fivpqovvam",
-//   accessToken: "aq9YgRIXsgEKRLXG8bAC2mM5wChSJddYq2dSbvpS89k"
+//   accessToken: "aq9YgRIXsgEKRLXG8bAC2mM5wChSJddYq2dSbvpS89k",
 // });
 
-// client.getEntries().then(entries => {
-//   entries.items.forEach(entry => {
+// client.getEntries().then((entries) => {
+//   entries.items.forEach((entry) => {
 //     if (entry.fields) {
 //       console.log(entry.sys.contentType.sys.id, entry.fields);
 //     }

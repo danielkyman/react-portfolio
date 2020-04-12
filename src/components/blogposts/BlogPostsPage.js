@@ -24,14 +24,14 @@ const BlogPostsPreview = ({ getBlogPost, blogPosts, getSinglePost, posts }) => {
 
   return (
     <div className="blog-posts-preview">
-      <h1>Recent Articles</h1>
+      <h1>Articles</h1>
       {blogPosts.map((post) => {
         return (
           <div key={post.sys.id}>
             <h2 onClick={(e) => routeToPost(e, post.fields.slug, post.sys.id)}>
               {post.fields.title}
             </h2>
-            {/* <h4>{dateFormat(post.fields.publishDate)}</h4> */}
+            <h4>{dateFormat(post.fields.publishDate)}</h4>
             <p>{post.fields.description}</p>
           </div>
         );
