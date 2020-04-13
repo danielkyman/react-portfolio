@@ -58,18 +58,24 @@ const ArticleSingle = ({ getSinglePost, post, blogPosts }) => {
   };
 
   return (
-    <div className="article container">
+    <div className="article">
       {loading ? (
         <span>loading</span>
       ) : (
         <>
-          <h1>{article.fields.title}</h1>
-          <p>Published {dateFormat(article.fields.publishDate)}</p>
-          <img src={article.fields.heroImage.fields.file.url} alt="" />
-          <ReactMarkdown
-            source={article.fields.body}
-            renderers={{ code: CodeBlock }}
-          />
+          <h1 className="article-title">{article.fields.title}</h1>
+          <div className="article-date-content-format">
+            <p className="article-date">
+              Published {dateFormat(article.fields.publishDate)}
+            </p>
+            {/* <img src={article.fields.heroImage.fields.file.url} alt="" /> */}
+            <div className="article-content">
+              <ReactMarkdown
+                source={article.fields.body}
+                renderers={{ code: CodeBlock }}
+              />
+            </div>
+          </div>
         </>
       )}
     </div>

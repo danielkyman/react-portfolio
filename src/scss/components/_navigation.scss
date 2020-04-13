@@ -7,10 +7,17 @@
   justify-content: space-between;
   margin-top: 30px;
   padding: 0px;
+  align-items: center;
+  border-bottom: 2px solid rgb(218, 218, 218);
 
   .logo {
     a {
       text-align: left;
+      h3 {
+        color: $black;
+        font-family: $font-alt;
+        letter-spacing: 3px;
+      }
     }
   }
 
@@ -18,7 +25,16 @@
     display: flex;
     justify-content: space-evenly;
     a {
-      margin: 0px 40px 0px 40px;
+      margin: 0px 40px;
+      h3 {
+        font-size: 1.3rem;
+        color: $alternate-color;
+        font-family: $font-alt;
+        letter-spacing: 3px;
+        &:hover {
+          color: black;
+        }
+      }
     }
   }
 }
