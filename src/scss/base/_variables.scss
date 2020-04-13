@@ -25,22 +25,25 @@ $desktop: $medium !default;
 // Global Colors
 //==============================================================================
 
-$background: white !default;
-$primary-color: #0366ee !default;
+$background: rgba(220, 220, 220, 0.726) !default;
+$primary-color: #ff2600 !default;
 $secondary-color: #29de7d !default;
 $accent-color: #cdcdcd !default;
 $alternate-background: #fafafa !default;
-$alternate-color: #404040 !default;
-$link-color: $primary-color !default;
+$alternate-color: #464646 !default;
+$link-color: rgb(179, 17, 17) !default;
 $link-hover-color: darken($link-color, 15%) !default;
 $highlight: #ffeea8 !default;
 $error: #d33c40 !default;
 $success: #29de7d !default;
 $bq-border: 16px solid #f0f0f0 !default;
+$black: #343434 !default;
 
 //==============================================================================
 // Typography
 //==============================================================================
+
+@import url("https://fonts.googleapis.com/css?family=Bitter|Girassol&display=swap");
 
 // Body
 $font-size: 1rem !default;
@@ -49,8 +52,10 @@ $font-style: normal !default;
 $font-variant: normal !default;
 $font-weight: normal !default;
 $font-color: #404040 !default;
-$font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica,
-  Arial, sans-serif !default;
+// $font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica,
+//   Arial, sans-serif !default;
+$font-family: "Girassol", cursive !default;
+$font-alt: "Bitter", serif;
 $line-height: 1.6 !default;
 
 // Headings
@@ -68,7 +73,7 @@ $h4-mobile: 1.1rem !default;
 $h5-mobile: 1rem !default;
 
 // Heading font size
-$h1: 2.25rem !default;
+$h1: 2.7rem !default;
 $h2: 2rem !default;
 $h3: 1.75rem !default;
 $h4: 1.5rem !default;
@@ -79,7 +84,7 @@ $h5: 1.25rem !default;
 //==============================================================================
 
 $padding: 1rem !default;
-$margins: 1.5rem !default;
+$margins: 1rem !default;
 $content-padding: 60px 0 !default;
 $content-padding-mobile: 30px 0 !default;
 

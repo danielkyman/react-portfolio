@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 //Components
 import NavBar from "./components/navigation/NavBar";
+import Footer from "./components/footer/Footer";
 
 //pages
 import HomePage from "./pages/HomePage";
@@ -24,13 +25,16 @@ function App() {
     <Router>
       <div className="container">
         <NavBar />
-        <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route exact path="/articles" component={ArticlesPage} />
-          <Route exact path="/about" component={AboutMe} />
-          <Route exact path="/contact" component={ContactPage} />
-          <Route exact path="/article/:slug" component={ArticleSingle} />
-        </Switch>
+        <div className="global-format">
+          <Switch>
+            <Route exact path="/" component={HomePage} />
+            <Route exact path="/articles" component={ArticlesPage} />
+            <Route exact path="/about" component={AboutMe} />
+            <Route exact path="/contact" component={ContactPage} />
+            <Route exact path="/article/:slug" component={ArticleSingle} />
+          </Switch>
+          <Footer />
+        </div>
       </div>
     </Router>
   );

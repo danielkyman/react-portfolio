@@ -1,3 +1,218 @@
-/**
- * Layout
- */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $alternate-color;
+}
+
+.container {
+  .global-format {
+    margin: 0 $margins;
+    .intro {
+      margin: 5rem 0;
+      &:hover {
+        h1 {
+          border-bottom: 2px solid $error;
+        }
+      }
+      h1 {
+        margin: 3rem 0;
+        color: $black;
+        font-size: 3.7rem;
+        font-family: $font-alt;
+        letter-spacing: 8px;
+        // border-bottom: 3px solid $error;
+        border-bottom: 2px solid rgb(218, 218, 218);
+      }
+      p {
+        margin: 0 1rem;
+        font-size: 1.3rem;
+        width: 70%;
+        line-height: 2.5;
+        color: $black;
+        font-family: $font-alt;
+      }
+    }
+    .blog-posts-preview {
+      margin: 5rem 0;
+      &:hover {
+        .recent-articles-heading {
+          h1 {
+            border-bottom: 2px solid $error;
+          }
+        }
+      }
+      .recent-articles-heading {
+        display: flex;
+        align-items: center;
+        margin: 3rem 0;
+
+        h1 {
+          color: $black;
+          margin: 0;
+          font-family: $font-alt;
+          letter-spacing: 8px;
+          //   border-bottom: 3px solid $error;
+          border-bottom: 2px solid rgb(218, 218, 218);
+        }
+        a {
+          margin-left: $margins;
+          button {
+            margin: 0;
+          }
+        }
+      }
+      .inner-home {
+        margin: 0 0rem;
+        display: flex;
+        flex-direction: column;
+        h2 {
+          font-size: 2rem;
+        }
+        .article-preview {
+          display: flex;
+          flex-direction: column;
+          margin: $margins;
+          border-bottom: 1px solid rgb(218, 218, 218);
+          &:hover {
+            border-bottom: 1px solid rgb(192, 192, 192);
+          }
+
+          &:hover {
+            cursor: pointer;
+            p,
+            h2 {
+              color: black;
+            }
+            // background-color: rgb(255, 255, 255);
+          }
+          h2 {
+            margin: 1rem 0;
+            color: $alternate-color;
+            font-family: $font-alt;
+          }
+          p {
+            margin: $margins 0.5rem;
+            color: $alternate-color;
+            font-size: 1.2rem;
+            font-family: $font-alt;
+          }
+        }
+      }
+    }
+    .projects-preview {
+      margin: 5rem 0;
+      &:hover {
+        h1 {
+          border-bottom: 2px solid $error;
+        }
+      }
+      h1 {
+        margin: 3rem 0;
+        color: $black;
+        font-family: $font-alt;
+        letter-spacing: 5px;
+        // border-bottom: 3px solid $error;
+        border-bottom: 2px solid rgb(218, 218, 218);
+        width: 50%;
+      }
+      .inner-home {
+        margin: 1rem;
+        color: $alternate-color;
+        font-family: $font-alt;
+        border-bottom: 1px solid rgb(218, 218, 218);
+        &:hover {
+          border-bottom: 1px solid rgb(192, 192, 192);
+        }
+        &:hover {
+          p,
+          a,
+          h3 {
+            color: $black;
+          }
+        }
+        p {
+          font-size: 1.2rem;
+          line-height: 2;
+          margin-left: $margins;
+        }
+        a {
+          font-size: 1.5rem;
+          text-decoration: none;
+          color: $alternate-color;
+          font-family: $font-alt;
+        }
+        .repo-depo-links {
+          display: flex;
+          margin-left: $margins;
+          h3 {
+            margin: $margins 0;
+            margin-right: $margins;
+          }
+        }
+      }
+    }
+    .references-preview {
+      margin: 5rem 0;
+      h1 {
+        margin: 3rem 0;
+        color: $black;
+        font-family: $font-alt;
+        letter-spacing: 5px;
+      }
+    }
+  }
+  .global-format {
+    .article {
+      color: $black;
+      font-family: $font-alt;
+      .article-title {
+        font-size: 6rem;
+        font-family: $font-alt;
+        color: $black;
+        width: 60%;
+        letter-spacing: 3px;
+      }
+      .article-date-content-format {
+        margin: 2rem 0;
+        display: flex;
+        .article-date {
+          text-align: right;
+          width: 10%;
+          margin: 2rem 0;
+          line-height: 2.2;
+        }
+        .article-content {
+          font-family: $font-alt;
+          color: $black;
+          width: 70%;
+          margin: 0 $margins;
+          h2,
+          h3 {
+            font-family: $font-alt;
+            color: $black;
+            font-size: 2rem;
+            margin: 0;
+            letter-spacing: 3px;
+            margin: 2rem 0;
+          }
+          p {
+            margin: 2rem $margins;
+            font-size: 1.5rem;
+            color: $alternate-color;
+            line-height: 2.2;
+          }
+          ul,
+          li {
+            font-size: 1.2rem;
+            margin: 2rem $margins;
+          }
+          code,
+          pre {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}

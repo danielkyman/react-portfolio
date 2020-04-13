@@ -9,12 +9,14 @@ html {
   font: $font-style $font-variant $font-weight #{$font-size}/#{$line-height}
     $font-family;
   font-size: $font-size;
+  background: $background;
+  border-top: 8px solid $error;
 }
 
 // Body base
 body {
   color: $font-color;
-  background: $background;
+
   font-size: $body-font-size;
 }
 
@@ -45,7 +47,7 @@ h5 {
   font-weight: $heading-font-weight;
   font-family: $heading-font-family;
   line-height: $heading-line-height;
-  color: $heading-font-color;
+  color: $black;
 
   &:not(:first-child) {
     margin: 1.5rem 0;

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useHistory } from "react-router-dom";
-import Moment from "react-moment";
+import { Link } from "react-router-dom";
 
 //redux
 import { connect } from "react-redux";
@@ -18,24 +18,33 @@ const BlogPostsPreview = ({ getBlogPost, blogPosts, getSinglePost, posts }) => {
     push(`/article/${slug}`);
   };
 
-  const dateFormat = (date) => {
-    return <Moment fromNow>{date}</Moment>;
-  };
+  // const dateFormat = (date) => {
+  //   return <Moment fromNow>{date}</Moment>;
+  // };
 
   return (
     <div className="blog-posts-preview">
-      <h1>Recent Articles</h1>
-      {blogPosts.map((post) => {
-        return (
-          <div key={post.sys.id}>
-            <h2 onClick={(e) => routeToPost(e, post.fields.slug, post.sys.id)}>
-              {post.fields.title}
-            </h2>
-            {/* <h4>{dateFormat(post.fields.publishDate)}</h4> */}
-            <p>{post.fields.description}</p>
-          </div>
-        );
-      })}
+      <div className="recent-articles-heading">
+        <h1>Recent Articles</h1>
+        <Link to="/articles">
+          <button className="muted-button">View All</button>
+        </Link>
+      </div>
+      <div className="inner-home">
+        {blogPosts.map((post) => {
+          return (
+            <div
+              key={post.sys.id}
+              className="article-preview"
+              onClick={(e) => routeToPost(e, post.fields.slug, post.sys.id)}
+            >
+              <h2>{post.fields.title}</h2>
+              {/* <h4>{dateFormat(post.fields.publishDate)}</h4> */}
+              <p>- {post.fields.description}</p>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };

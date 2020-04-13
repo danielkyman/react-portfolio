@@ -14,29 +14,37 @@ const ProjectsPreview = ({ getProject, projects }) => {
       <h1>Recent Projects</h1>
       {projects.map((project) => {
         return (
-          <div key={project.sys.id}>
-            <a
-              href={project.fields.source}
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              {project.fields.title}
-            </a>
-            <p>{project.fields.description}</p>
-            <a
-              href={project.fields.source}
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              Repository
-            </a>
-            <a
-              href={project.fields.path}
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              Deployment
-            </a>
+          <div key={project.sys.id} className="inner-home">
+            <h3>
+              <a
+                href={project.fields.source}
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                {project.fields.title}
+              </a>
+            </h3>
+            <p>- {project.fields.description}</p>
+            <div className="repo-depo-links">
+              <h3>
+                <a
+                  href={project.fields.source}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  Repository
+                </a>
+              </h3>
+              <h3>
+                <a
+                  href={project.fields.path}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  Deployment
+                </a>
+              </h3>
+            </div>
           </div>
         );
       })}
