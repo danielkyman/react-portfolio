@@ -3,8 +3,12 @@ import React from "react";
 const AboutMe = () => {
   return (
     <div className="about-page">
-      <h1>about me page</h1>
-      <p>intro ... what i bring to the table</p>
+      <h1>About Me</h1>
+      <div className="inner-home">
+        <p>
+          Im Daniel Kyman, a full stack web developer and software engineer.
+        </p>
+      </div>
     </div>
   );
 };
