@@ -12,7 +12,7 @@
       font-family: $font-alt;
     }
     .intro {
-      margin: 5rem 0;
+      margin-top: 10rem;
       &:hover {
         h1 {
           border-bottom: 2px solid $error;
@@ -23,17 +23,20 @@
         color: $black;
         font-size: 3.7rem;
         font-family: $font-alt;
-        letter-spacing: 8px;
+        // letter-spacing: 8px;
         // border-bottom: 3px solid $error;
         border-bottom: 2px solid rgb(218, 218, 218);
+        font-family: 'Inconsolata', monospace;
       }
       p {
         margin: 0 1rem;
         font-size: 1.5rem;
         width: 70%;
-        line-height: 2.5;
+        line-height: 1.5;
         color: $black;
-        // font-family: $font-alt;
+        // font-family: 'Montserrat', sans-serif;
+        font-family: $mono-font;
+        text-indent: 60px;
       }
     }
     .blog-posts-preview {
@@ -48,13 +51,14 @@
       .recent-articles-heading {
         display: flex;
         align-items: center;
-        margin: 3rem 0;
+        margin-top: 10rem;
+        margin-bottom: 3rem;
 
         h1 {
           color: $black;
-          margin: 0;
-          font-family: $font-alt;
-          letter-spacing: 8px;
+          font-family: $mono-font;
+          font-size: 3.7rem;
+          // letter-spacing: 8px;
           //   border-bottom: 3px solid $error;
           border-bottom: 2px solid rgb(218, 218, 218);
         }
@@ -92,13 +96,14 @@
           h2 {
             margin: 1rem 0;
             color: $alternate-color;
-            font-family: $font-alt;
+            font-family: $mono-font;
           }
           p {
             margin: $margins 0.5rem;
             color: $alternate-color;
             font-size: 1.4rem;
-            // font-family: $font-alt;
+            font-family: $mono-font;
+            width: 80%;
           }
         }
       }
@@ -113,8 +118,8 @@
       h1 {
         margin: 3rem 0;
         color: $black;
-        font-family: $font-alt;
-        letter-spacing: 5px;
+        font-family: $mono-font;
+        // letter-spacing: 5px;
         // border-bottom: 3px solid $error;
         border-bottom: 2px solid rgb(218, 218, 218);
         width: 50%;
@@ -138,12 +143,14 @@
           font-size: 1.4rem;
           line-height: 2;
           margin-left: $margins;
+          width: 80%;
+          font-family: $mono-font;
         }
         a {
           font-size: 1.5rem;
           text-decoration: none;
           color: $alternate-color;
-          font-family: $font-alt;
+          font-family: $mono-font;
         }
         .repo-depo-links {
           display: flex;
@@ -160,15 +167,16 @@
       h1 {
         margin: 3rem 0;
         color: $black;
-        font-family: $font-alt;
+        font-family: $mono-font;
         letter-spacing: 5px;
       }
     }
   }
   .global-format {
     .article {
+      margin-top: 10rem;
       color: $black;
-      font-family: $font-alt;
+      font-family: $mono-font;
       .article-title {
         font-size: 6rem;
         font-family: $font-alt;
@@ -193,11 +201,11 @@
           margin: 0 $margins;
           h2,
           h3 {
-            font-family: $font-alt;
+            font-family: $mono-font;
             color: $black;
             font-size: 2rem;
             margin: 0;
-            letter-spacing: 3px;
+            // letter-spacing: 3px;
             margin: 2rem 0;
           }
           p {
@@ -205,6 +213,8 @@
             font-size: 1.5rem;
             color: $alternate-color;
             line-height: 2.2;
+            font-family: $mono-font;
+            text-indent: 20px;
           }
           ul,
           li {
@@ -213,15 +223,23 @@
           }
           code,
           pre {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
           }
         }
       }
     }
   }
   .about-page {
+    margin-top: 10rem;
+    font-family: $mono-font;
+    h1 {
+      font-family: $mono-font;
+      font-size: 3.7rem;
+    }
+
     .inner-home {
       margin: $margins;
+      width: 70%;
       p {
         font-size: 1.2rem;
       }
