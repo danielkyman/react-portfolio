@@ -26,7 +26,7 @@
         // letter-spacing: 8px;
         // border-bottom: 3px solid $error;
         border-bottom: 2px solid rgb(218, 218, 218);
-        font-family: 'Inconsolata', monospace;
+        font-family: "Inconsolata", monospace;
       }
       p {
         margin: 0 1rem;
@@ -244,5 +244,9 @@
         font-size: 1.2rem;
       }
     }
+  }
+
+  .contact-page {
+    margin-top: 10rem;
   }
 }
