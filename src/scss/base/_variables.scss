@@ -43,8 +43,9 @@ $black: #343434 !default;
 // Typography
 //==============================================================================
 
-@import url("https://fonts.googleapis.com/css?family=Bitter|Girassol&display=swap");
-
+@import url('https://fonts.googleapis.com/css?family=Bitter|Girassol&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 // Body
 $font-size: 1rem !default;
 $body-font-size: 1rem !default;
@@ -54,8 +55,9 @@ $font-weight: normal !default;
 $font-color: #404040 !default;
 // $font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica,
 //   Arial, sans-serif !default;
-$font-family: "Girassol", cursive !default;
-$font-alt: "Bitter", serif;
+$font-family: 'Girassol', cursive !default;
+$font-alt: 'Bitter', serif;
+$mono-font: 'Inconsolata', monospace;
 $line-height: 1.6 !default;
 
 // Headings
@@ -136,10 +138,10 @@ $round-buttons: 40px !default;
 //==============================================================================
 
 $forms: (
-  "[type=color], [type=date], [type=datetime], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url], [type=week], [type=time], select, textarea"
+  '[type=color], [type=date], [type=datetime], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url], [type=week], [type=time], select, textarea'
 );
 $buttons: (
-  ".button, a.button, button, [type=submit], [type=reset], [type=button]"
+  '.button, a.button, button, [type=submit], [type=reset], [type=button]'
 );
 $input-background: transparent !default;
 $placeholder: darken($accent-color, 20%) !default;
@@ -159,7 +161,7 @@ $caption: #ababab !default;
 //==============================================================================
 
 $code-color: $font-color !default;
-$code-size: 14px !default;
+$code-size: 12px !default;
 $code-family: Menlo, monospace !default;
 $code-background: transparent !default;
 $code-borders: $borders !default;

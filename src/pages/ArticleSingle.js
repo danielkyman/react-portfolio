@@ -54,7 +54,8 @@ const ArticleSingle = ({ getSinglePost, post, blogPosts }) => {
   }, [slug]);
 
   const dateFormat = (date) => {
-    return <Moment fromNow>{date}</Moment>;
+    // return <Moment fromNow>{date}</Moment>;
+    return <Moment format="D MMM YYYY">{date}</Moment>;
   };
 
   return (
